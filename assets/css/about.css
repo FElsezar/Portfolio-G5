@@ -1,0 +1,62 @@
+.sobre-mi{
+    display: flex;
+    flex-direction: column;
+}
+
+.sobre-mi__soft-skills{
+    padding: 1rem;
+}
+
+.soft-skills__img{
+    display: block;
+    width: 90%;
+    min-width: 200px;
+    margin: 0 auto;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    box-shadow: 2px 2px 30px 2px #000000;
+}
+
+.soft-skills__lista{
+    list-style-type: none;
+    margin-bottom: 35px;
+}
+
+.soft-skills__items::before{
+        content: "✯";
+        padding-right: 10px;
+    }
+.soft-skills__items::after{
+    content: ".";
+}
+
+@media screen and (min-width: 1024px) {
+    .sobre-mi__informacion{
+        width: 65%;
+    }
+    .soft-skills__img{
+        display: none;
+    }
+    .soft-skills__lista{
+        padding-left: 10%;
+    }
+}
+@media screen and (min-width: 780px) {
+    .sobre-mi{
+        flex-direction: row;
+    }
+    .sobre-mi__soft-skills{
+        width: 35%;
+    }
+    .sobre-mi__informacion{
+        width: 65%;
+        margin-right: 2rem;
+        padding: 1rem;
+    }
+    .soft-skills__img{
+        width: 60%;
+    }
+}
